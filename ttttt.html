@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Фотогалерея</title>
+        <style>
+        	.photo-item{
+        		width: 400px;
+        		height: 200px;
+        		position: relative;
+        		margin: 15px;
+        		overflow: hidden;
+        		cursor: pointer;
+        		float: left;
+        	}
+
+        	.photo-item img{
+				width: 100%;
+        	}
+
+        	.title, .description{
+        		position: absolute;
+        		left: 0;
+        		padding: 5px;
+        		background-color: rgba(0, 0, 0, 0.6);
+        		color: #fff;
+        	}
+
+        	.title{
+        		top: 0;
+        		font-weight: 600;
+        	}
+
+        	.description{
+        		bottom: 0;
+        		width: 100%;
+        		text-align: center;
+        		display: none;
+        	}
+
+        	.photo-item:hover .description{
+				display: block;
+        	}
+			
+			.photo-item:hover{
+				box-shadow: 0 0 10px rgba(0,0,0,0.5);
+			}
+
+			#btnTop{
+				position: fixed;
+				padding: 10px;
+				right: 30px;
+				bottom: 50px;
+				background-color: #4c4b4b;
+				color: #fff;
+			}
+        	
+
+        </style>
+    </head>
+    <body>
+      <div id="view">
+        
+        <div class="wrapper" name="top">
+
+        	<div class="photo-item">
+	            <div class="photo">
+	                <img src="https://gdb.rferl.org/B6168C8D-D0EB-42A0-8A11-50C99333FC2C_w1023_r1_s.jpg" alt="Это абсолютный адрес изображения">
+	            </div>
+	            <div class="title">Швейцария</div>
+	            <div class="description">Вид с моста</div>
+           	</div>
+
+          	<div class="photo-item">
+	            <div class="photo">
+	                <img src="https://store.domovita.by/1/WgEjWoIjwB0K7T0OFYvwBOq1P_SGc1TO.jpg" alt="Это абсолютный адрес изображения">
+	            </div>
+	            <div class="title">Беларусь, Минск</div>
+	            <div class="description">Национальная библиотека</div>
+           	</div>
+           	<div class="photo-item">
+	            <div class="photo">
+	                <img src="https://iqdecision.com/wp-content/uploads/2018/11/1-15.jpg" alt="Это абсолютный адрес изображения">
+	            </div>
+	            <div class="title">Англия, Лондон</div>
+	            <div class="description">БИГ-БЕН</div>
+           	</div>
+           	<div class="photo-item">
+	            <div class="photo">
+	                <img src="https://img.tourister.ru/files/2/0/5/4/6/2/3/4/20546234.jpg" alt="Это абсолютный адрес изображения">
+	            </div>
+	            <div class="title">Индия</div>
+	            <div class="description">Тадж-Махал</div>
+           	</div>
+           	<div class="photo-item">
+	            <div class="photo">
+	                <img src="https://traveller-eu.ru/sites/default/files/styles/index/public/wien%20%281%29.jpg?itok=RaAM5aSY" alt="Это абсолютный адрес изображения">
+	            </div>
+	            <div class="title">Австрия, Вена</div>
+	            <div class="description"></div>
+           	</div>
+           	<div class="photo-item">
+	            <div class="photo">
+	                <img src="https://img04.rl0.ru/5bdc851dc51c11b27e1774f9bd926cfe/c765x400i/news.rambler.ru/img/2018/10/5121d1328df34.jpg" alt="Это абсолютный адрес изображения">
+	            </div>
+	            <div class="title">Дания</div>
+	            <div class="description">Тадж-Махал</div>
+           	</div>
+           	<div class="photo-item">
+	            <div class="photo">
+	                <img src="https://pix10.agoda.net/geo/city/3636/1_3636_02.jpg?s=1920x822" alt="Это абсолютный адрес изображения">
+	            </div>
+	            <div class="title">Латвия, Рига</div>
+	            <div class="description"></div>
+           	</div>
+
+
+            
+            <a id="btnTop" href="#top">Вверх</a>
+        </div>
+      </div>
+  </body>
+</html>
